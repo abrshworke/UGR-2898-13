@@ -1,103 +1,144 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skill</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    
+    
 </head>
 
-<body>
-  <header>
-    <img class="logo-image" src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="Logo">
+<body class="vh-100">
     
-    <a href="#menu" class="menu-icon" id="menu"></a>
-
-    <nav>
-      <span><a href="aboutme.html">About Me</a></span>
-      <span><a href="skill.html">Skill</a></span>
-      <span><a href="education.html">Education</a></span>
-      <span><a href="cv.html">CV/Resume</a></span>
-      <span><a href="hobbies.html">Hobbies</a></span>
-    </nav>
-  </header>
-
-  <main class="skill-m">
-    <div class="container">
-      <div class="section technical-skills">
-        <button class="button-tech">Technical Skills</button>
-        <div class="column">
-          <h3>Programming Languages:</h3>
-          <ul>
-            <li><strong>Python</strong></li>
-            <li><strong>JavaScript</strong></li>
-          </ul>
-    
-          <h3>Web Development:</h3>
-          <ul>
-            <li><strong>HTML</strong></li>
-            <li><strong>CSS</strong></li>
-            <li><strong>React</strong></li>
-          </ul>
+    <header class="header bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-9 mb-2 mt-2">
+                    <img class="header__logo-image img-fluid w-25"
+                        src="c:\Users\CHEMIKAL E\Downloads\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="logo">
+                </div>
+                <div class="col-md-8 col-3 text-right">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutme.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="skill.html">Skill</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="education.html">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cv.html">CV/Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
+    </header>
     
-      <div class="section soft-skill">
-        <button class="button-soft">Soft Skills</button>
-        <div class="column">
-          <h3>Communication:</h3>
-          <ul>
-            <li><strong>Clear and Effective:</strong> communication in both written and verbal forms.</li>
-          </ul>
     
-          <h3>Team Collaboration:</h3>
-          <ul>
-            <li><strong>Experience:</strong> working in cross-functional teams to achieve project goals.</li>
-          </ul>
+    
+    <main class="skill bg-primary p-3 rounded mb-4 mt-4  ">
+        <div class="skill__container row mt-5">
+            <div class="col-md-4">
+                <div class="skill__technical-skills">
+                    <button class="skill__button-tech btn btn-light">Technical Skills</button>
+                    <div class="skill__column">
+                        <h3 class="fw-bold">Programming Languages:</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Python</strong></li>
+                            <li><strong>JavaScript</strong></li>
+                        </ul>
+    
+                        <h3 class="fw-bold">Web Development:</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>HTML</strong></li>
+                            <li><strong>CSS</strong></li>
+                            <li><strong>React</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="skill__soft-skill">
+                    <button class="skill__button-soft btn btn-light">Soft Skills</button>
+                    <div class="skill__column">
+                        <h3 class="fw-bold">Communication:</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Clear and Effective:</strong> communication in both written and verbal forms.</li>
+                        </ul>
+    
+                        <h3 class="fw-bold">Team Collaboration:</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Experience:</strong> working in cross-functional teams to achieve project goals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="skill__Tool-and-Technology">
+                    <button class="skill__button-tool btn btn-light">Tools and Technology</button>
+                    <div class="skill__column">
+                        <h3 class="fw-bold">IDEs:</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Visual Studio Code</strong></li>
+                        </ul>
+    
+                        <h3 class="fw-bold">Collaboration:</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Slack</strong></li>
+                            <li><strong>Trello</strong></li>
+                        </ul>
+    
+                        <h3 class="fw-bold">Version Control:</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Git</strong></li>
+                            <li><strong>GitHub</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    
-      <div class="section Tool-and-Technology">
-        <button class="button-tool">Tools and Technology</button>
-        <div class="column">
-          <h3>IDEs:</h3>
-          <ul>
-            <li><strong>Visual Studio Code</strong></li>
-          </ul>
-    
-          <h3>Collaboration:</h3>
-          <ul>
-            <li><strong>Slack</strong></li>
-            <li><strong>Trello</strong></li>
-          </ul>
-    
-          <h3>Version Control:</h3>
-          <ul>
-            <li><strong>Git</strong></li>
-            <li><strong>GitHub</strong></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-  </main>
+    </main>
 
-  <footer class="footer">
-    <div class="socials">
-      <a href="http://faok.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png" alt="Facebook icon"></a>
-      <a href="htagram.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp" alt="Instagram icon"></a>
-      <a href="http:/egram.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png" alt="Telegram icon"></a>
-    </div>
-  </footer>
+
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row text-white float-right">
+                <div class="col-3 text-white float-right">
+                    <a href="http://facek.com/" class="text-white text-white float-right ">
+                        <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png" alt="facebook icon" class="w-25 mt-3 mb-2 ">
+                    </a>
+                    <a href="http://inaram.com/" class="text-white text-white float-right">
+                        <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp"
+                            alt="instagram icon" class="w-25 mt-3 mb-2">
+                    </a>
+                    <a href="http://gam.com/" class="text-white text-white float-right">
+                        <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png" alt="twitter icon" class="w-25 mt-3 mb-2 ">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
+  

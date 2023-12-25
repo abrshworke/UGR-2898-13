@@ -1,55 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aboutme</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>About Me</title>
+    <link rel="stylesheet" href="bootstrap.css">
+  
+</head>
 
-  </head>
-
-  <body>
-    <header>
-      <img class="logo-image" src="c:\Users\CHEMIKAL E\Downloads\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="logo">
-       
-      <a href="#menu" class="menu-icon" id="menu"></a>
-      
-
-      <nav>
-          <span><a href="aboutme.html">Aboutme</a></span>
-          <span><a href="skill.html">Skill</a></span>
-          <span><a href="education.html">Education</a></span>
-          <span><a href="cv.html">Cv/Resume</a></span>
-          <span><a href="hobbies.html">Hobbies</a></span>
-          
-      </nav>    
-  </header>
-
-
-  <main>
-    <div class="main-aboutme">
-      <div class="image-aboutme">
-          <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\52 IMG_5179 s.JPG" alt="profile">
-      </div>
-      <div class="text-aboutme">
-          <h1> Abreham  worke</h1>
-          <p>Hello, I'm Abreham Worke, a student at Addis Ababa University pursuing a degree in Software Engineering. As a junior web developer, I am passionate about creating innovative and user-friendly web solutions. My goal is to make a meaningful impact in the world of technology and contribute to the advancement of the web development landscape.
-          </p>
-              </div>
-  </div>
+<body class="vh-100">
     
+    <header class="header bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-9 mb-2 mt-2">
+                    <img class="header__logo-image img-fluid w-25"
+                        src="c:\Users\CHEMIKAL E\Downloads\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="logo">
+                </div>
+                <div class="col-md-8 col-3 text-right">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutme.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="skill.html">Skill</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="education.html">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cv.html">CV/Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  </main>
 
-  <footer class="fotter">
-    <div class="socials">
-      <a href="http://facek.com/"><img  src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png" alt="facebook icon"></a>
-      <a href="http://inaram.com/"><img  src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp" alt="instagram icon"></a>
-      <a href="http://gam.com/"><img  src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png"></a>
-      
-  </div>
-
-  </footer>
     
-  </body>
-  </html>
+<main class="main bg-primary  mb-5">
+    <div class="container mt-3 ">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="main__main-aboutme text-white rounded p-4">
+                    <div class="main__image-aboutme">
+                        <img class="main__image-aboutme-img img-fluid" src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\52 IMG_5179 s.JPG" alt="profile">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="main__main-aboutme  text-white rounded p-4">
+                    <div class="main__text-aboutme">
+                        <h1 class="main__text-aboutme-h1">Abreham Worke</h1>
+                        <p>Hello, I'm Abreham Worke, a student at Addis Ababa University pursuing a degree in Software Engineering. As a junior web developer, I am passionate about creating innovative and user-friendly web solutions. My goal is to make a meaningful impact in the world of technology and contribute to the advancement of the web development landscape.</p>
+                        <button class="main__contact-link btn btn-light" onclick="toggleForm()">Contact Me</button>
+
+                        <form class="main__form mt-3" id="contactForm" style="display: none;">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone-number">Phone Number:</label>
+                                <input type="text" class="form-control" id="phone-number" name="phone-number" required>
+                            </div>
+
+                            <button class="btn btn-success mt-5" type="button" onclick="submitForm()">Submit</button>
+                        </form>
+                        <div id="messageContainer" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row text-white float-right">
+                <div class="col-3 text-white float-right">
+                    <a href="http://facek.com/" class="text-white text-white float-right ">
+                        <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png" alt="facebook icon" class="w-25   mt-3">
+                    </a>
+                    <a href="http://inaram.com/" class="text-white text-white float-right">
+                        <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp"
+                            alt="instagram icon" class="w-25 mt-3">
+                    </a>
+                    <a href="http://gam.com/" class="text-white text-white float-right">
+                        <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png" alt="twitter icon" class="w-25 mt-3 ">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
+  

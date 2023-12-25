@@ -1,46 +1,86 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    
+    
 </head>
 
-<body>
-  <header>
-    <img class="logo-image" src="images/831a3056a13e05fdc84c483a26c6ff16.jpg" alt="Logo">
-
-    <a href="#menu" class="menu-icon" id="menu"></a>
-
+<body  class="vh-100">
     
-    <nav>
-      <span><a href="aboutme.html">About Me</a></span>
-      <span><a href="skill.html">Skill</a></span>
-      <span><a href="education.html">Education</a></span>
-      <span><a href="cv.html">CV/Resume</a></span>
-      <span><a href="hobbies.html">Hobbies</a></span>
-    </nav>
-  </header>
+    <header class="header bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-9 mb-2 mt-2">
+                    <img class="header__logo-image img-fluid w-25"
+                        src="c:\Users\CHEMIKAL E\Downloads\831a3056a13e05fdc84c483a26c6ff16.jpg" alt="logo">
+                </div>
+                <div class="col-md-8 col-3 text-right">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutme.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="skill.html">Skill</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="education.html">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cv.html">CV/Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <main class="cv-m">
-    <div class="cv-image">
-      <h2 class="cv">Resume/CV</h2>
-      <img class="imgc" src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Abreham_Worke_Resume_13-11-2023-00-53-59_page-0001.jpg" alt="CV Page ">
-    </div>
+    <main class="cv bg-primary">
+      <div class="cv__cv-image">
+          <h2 class="cv__cvr text-center mb-4">Resume/CV</h2>
+          <img class="cv__imgc img-fluid mx-auto d-block mb-4 ml-4 " src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Abreham_Worke_Resume_13-11-2023-00-53-59_page-0001.jpg" alt="CV Page">
+      </div>
   </main>
+  
+  
 
-  <footer class="footer">
-    <div class="socials">
-      <a href="http://faok.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png" alt="Facebook icon"></a>
-      <a href="http://instaam.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp" alt="Instagram icon"></a>
-      <a href="http://teleram.com/"><img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png" alt="Telegram icon"></a>
+  
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+        <div class="row text-white float-right">
+            <div class="col-3 text-white float-right">
+                <a href="http://facek.com/" class="text-white text-white float-right ">
+                    <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\229098.png" alt="facebook icon" class="w-25  mt-3">
+                </a>
+                <a href="http://inaram.com/" class="text-white text-white float-right">
+                    <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Instagram_icon.png.webp"
+                        alt="instagram icon" class="w-25 mt-3">
+                </a>
+                <a href="http://gam.com/" class="text-white text-white float-right">
+                    <img src="c:\Users\CHEMIKAL E\Desktop\UGR-2898-13\src\images\Untitled.png" alt="twitter icon" class="w-25 mt-3 ">
+                </a>
+            </div>
+        </div>
     </div>
-  </footer>
+</footer>
 
+<script src="bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
