@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Submit Form</h1>
+    <form  action="/employers/submit"  method="post">
+    <label for="name">Job name: </label>
+    <input type="text" id="name" name="jobName" required>
+    <br>
+    <label for="email">Job Type: </label>
+    <input type="text" id="type" name="jobType" required>
+    <br>
+    <label for="email">GPA: </label>
+    <input type="number" id="gpa" name="gpa" required>
+    <br>
+    <label for="email">Date: </label>
+    <input type="date" id="date" name="date" required>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
